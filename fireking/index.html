@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Rei do Fogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+	    <div class="logo">
+		<h1>O Rei do Fogo</h1>
+	    </div>
+            <ul class="nav-list">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#capitulos">Capítulos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+<section id="inicio" class="section inicio">
+    <div class="container">
+        <div class="about-story">
+            <h2 class="title">Embarque nessa jornada</h2>
+            <p class="description">em um mundo de fantasias e mistérios prontos para serem desbravados</p>
+            <button class="btn-open-modal" onclick="openModal()">Sinopse</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- ... Código anterior ... -->
+
+<section id="personagens" class="section personagens">
+    <div class="container">
+        <h2 class="section-title">Personagens</h2>
+        
+        <div class="character-cards">
+            <div class="character-card">
+                <img src="images/Afae.jpg" alt="Afae">
+                <h3 class="character-name">Afae</h3>
+                <p class="character-role">Protagonista</p>
+                <button class="btn-open-character-modal" onclick="openCharacterModal(1)">Sobre o Personagem</button>
+            </div>
+            
+            <div class="character-card">
+                <img src="images/Lumeria.jpg" alt="Lumeria">
+                <h3 class="character-name">Lumeria</h3>
+                <p class="character-role">Princesa</p>
+                <button class="btn-open-character-modal" onclick="openCharacterModal(2)">Sobre o Personagem</button>
+            </div>
+            
+            <div class="character-card">
+                <img src="images/Aric.jpg" alt="Aric">
+                <h3 class="character-name">Aric</h3>
+                <p class="character-role">General</p>
+                <button class="btn-open-character-modal" onclick="openCharacterModal(3)">Sobre o Personagem</button>
+            </div>
+            
+            <div class="character-card">
+                <img src="images/Arony.jpg" alt="Arony">
+                <h3 class="character-name">Arony</h3>
+                <p class="character-role">Cavaleiro Junior</p>
+                <button class="btn-open-character-modal" onclick="openCharacterModal(4)">Sobre o Personagem</button>
+            </div>
+            
+            <div class="character-card">
+                <img src="images/Arkin.jpg" alt="Arkin">
+                <h3 class="character-name">Arkin</h3>
+                <p class="character-role">Bobo da Corte</p>
+                <button class="btn-open-character-modal" onclick="openCharacterModal(5)">Sobre o Personagem</button>
+            </div>
+            
+            <div class="character-card">
+                <img src="images/Espantalho.jpg" alt="Espantalho">
+                <h3 class="character-name">Espantalho</h3>
+                <p class="character-role">Antagonista</p>
+<button class="btn-open-character-modal" onclick="openCharacterModal(6)">Sobre o Personagem</button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Afae -->
+<div id="character1-modal" class="modal">
+    <div class="modal-content">
+	<span class="close" onclick="closeModal(1)">&times;</span>
+        <img src="images/Afae.jpg" alt="Afae" class="character-image">
+        <h2 class="modal-title">Afae</h2>
+        <p class="modal-description">
+Afae é um jovem de 16 anos que vivia com a sua mãe adotiva em um vilarejo afastado. Aos 12 anos, teve um sonho estranho onde se viu diante de um vilarejo destruído. Esse sonho o perseguiu até os 16 anos, quando ele alcançou a idade de ir até a capital ingressar no exercito, e, na capital, encontrar uma solução ou uma explicação de seus sonhos. Apesar de por fora sempre parecer feliz e disposto a ajudar, seus sonhos são tão intensos que o fazem um grande sofrimento interno.
+            <!-- Inserir descrição de Afae aqui -->
+        </p>
+    </div>
+</div>
+
+<!-- Modal de Lumeria -->
+<div id="character2-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="images/Lumeria.jpg" alt="Lumeria" class="character-image">
+        <h2 class="modal-title">Lumeria</h2>
+        <p class="modal-description">
+Lumeria Xyon VI é a princesa do grande reino de Gemilia. Seu pai, o Rei, sempre tenta a proteger de tudo, vivendo sobrecarregada com a superproteção. Seu sonho é de lutar pelo seu reino e pelas pessoas que ali vivem, e isso até mesmo a levou a aprender e dominar a arquearia em segredo de seu pai. Ansciosa por uma reviravolta em sua vida, e apoiada pela rainha, sua mãe, ela irá ganhar um papel enorme no decorrer da trama.
+            <!-- Inserir descrição de Lumeria aqui -->
+        </p>
+    </div>
+</div>
+
+<!-- Modal de Aric -->
+<div id="character3-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="images/Aric.jpg" alt="Aric" class="character-image">
+        <h2 class="modal-title">Aric</h2>
+        <p class="modal-description">
+O general do reino, lider do exercito e braço direito e amigo pessoal do reino, Aric Trinadimond é um dos homens mais importantes do Reino. Seguido por um intenso arrependimento em seu passado, ele trata todos do exercito como filhos, e sua bravura é reconhecida pelo reino. Tenta corrigir seu erro, mas sabe que não pode fazer nada.
+            <!-- Inserir descrição de Aric aqui -->
+        </p>
+    </div>
+</div>
+
+<!-- Modal de Arony -->
+<div id="character4-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="images/Arony.jpg" alt="Arony" class="character-image">
+        <h2 class="modal-title">Arony</h2>
+        <p class="modal-description">
+Arony é um membro recém ingressado do exercito do reino, além de ser o mais jovem, com apenas 14 anos. Sua família é conhecida por força e físicos, e isso fez ele treinar e desenvolver seu corpo desde muito novo, fazendo ele parecer muito mais velho, com um físico incrível, mas isso também fez ele desenvolver uma forte sindrome do impostor que ele mal consegue superar. Com a ajuda de Afae, será uma peça central da trama.
+            <!-- Inserir descrição de Arony aqui -->
+        </p>
+    </div>
+</div>
+
+<!-- Modal de Arkin -->
+<div id="character5-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="images/Arkin.jpg" alt="Arkin" class="character-image">
+        <h2 class="modal-title">Arkin</h2>
+        <p class="modal-description">
+Arkin, o bobo da corte, é um alegre homem que está a frente da corte, alegrando e divertindo a todos com um enorme profissionalismo. Seus espetáculos são aguardados com ansiedade, e sempre estão lotados. Tal profissionalismo faz ele aderir a personalidade do bobo da corte, e isso faz que ninguem saiba exatamente o que ele está pensando, ou o que almeja além das risadas.
+            <!-- Inserir descrição de Arkin aqui -->
+        </p>
+    </div>
+</div>
+
+<!-- Modal de Espantalho -->
+<div id="character6-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="images/Espantalho.jpg" alt="Espantalho" class="character-image">
+        <h2 class="modal-title">Espantalho</h2>
+        <p class="modal-description">
+O espantalho é o mistérioso antagonista do livro, que amendontra e aterroriza diversas regiões do reino. Apenas se sabe que busca vingança, devido as ameaças que faz a família real. Caberá a Afae descobrir quem está por trás dele, antes que os inocentes paguem o preço por suas terrivéis atitudes.
+            <!-- Inserir descrição de Espantalho aqui -->
+        </p>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="modal-title">O Rei do Fogo</h2>
+        <p class="modal-description">Todos carregamos demônios interiores, partes nossas que escondemos dos outros e lutamos contra diariamente. Para o jovem Afae, esses tormentos se materializam em seus enigmáticos sonhos, revelando uma conexão profunda com um passado marcado por mentiras, traições, inocência perdida e anseios de vingança. Agora, cabe a ele desvendar seu papel nessa saga, embarcando em uma jornada pelo seu passado esquecido e enfrentando um futuro incerto, na tentativa de evitar que o reino caia no abismo do caos e do sofrimento.</p>
+    </div>
+</div>
+    
+<!-- ... Código anterior ... -->
+
+<!-- ... Código anterior ... -->
+
+<section id="capitulos" class="section capitulos">
+    <div class="container">
+        <div class="chapter-header">
+            <h2 class="section-title">Capítulos</h2>
+            <div class="chapters">
+                <div class="chapter">
+	</div>
+        
+        <div class="chapters">
+    <div class="chapter">
+        <h3 class="chapter-title">Capítulo 0 - Destruição</h3>
+        <p class="chapter-description">
+	Nesse prológo, Afae se lembra de todos os seus erros e arrependimentos, no final de uma intensa batalha.
+            <!-- Inserir descrição do Capítulo 0 aqui -->
+        </p>
+        <button class="btn-download">
+            <a href="https://drive.google.com/drive/folders/1N46zSwUvBuW8-AThXz4LPjuDWi5Q6d6_" target="_blank">Acessar</a>
+        </button>
+    </div>
+    
+    <div class="chapter">
+        <h3 class="chapter-title">Capítulo 1 - O Maldito Sonho</h3>
+        <p class="chapter-description">
+Afae tem um de seus sonhos, mas um detalhe diferente acaba o aterrorizando
+            <!-- Inserir descrição do Capítulo 1 aqui -->
+        </p>
+        <button href="https://drive.google.com/drive/folders/1N46zSwUvBuW8-AThXz4LPjuDWi5Q6d6_" target="_blank" class="btn-download">
+<a href="https://drive.google.com/drive/folders/1N46zSwUvBuW8-AThXz4LPjuDWi5Q6d6_" target="_blank">Acessar</a>
+        </button>
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+<!-- ... Restante do conteúdo aqui ... -->
+
+
+    <script>
+
+// Função para abrir o modal
+function openCharacterModal(characterId) {
+    var modal = document.getElementById("character" + characterId + "-modal");
+    modal.style.display = "block";
+}
+
+// Função para fechar o modal
+function closeModal(characterId) {
+    var modal = document.getElementById("character" + characterId + "-modal");
+    modal.style.display = "none";
+}
+
+// Fechar modal quando o usuário clicar fora dele
+window.onclick = function(event) {
+    var modals = document.getElementsByClassName("modal");
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+}
+
+
+	function openModal() {
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+    </script>
+</body>
+</html>
